@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html id="top">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tar Ottó, retro számítógép, retro computer, mikroszámítógép, mikrocomputer">
+<title>mikroszámítógép</title>
+<script> <!--A könyvjelzőhőz görget-->
+	const görget = function (selector) {let bookmark = document.querySelector(selector).offsetTop; window.scrollTo(0, bookmark);}
+</script>
+<link rel="icon" type="image/ico" href="mikroszamitogep/billentyuzet.ico"/><!--A lapfül címe előtt megjelenö ikon (favicon) beállítása-->
+
+<style>
+	* {
+				box-sizing: border-box;
+}
+	html {min-width: 1010px;}
+	body {background-color: rgb(221,216,194)}
+	body > div {display:flex; margin:16px 0px; flex-wrap: wrap}
+	.fejléc { display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; align-items: center;}
+	.fejléc p {	color:rgb(241, 184, 0); margin:0 0 0 8px; font-size:60px; text-align:center}
+	.van_már img { width:320px; margin:8px 5px 0px 6px}
+	.van_már span:nth-child(1) { color: blue; margin: 0px 8px}
+	.van_már span:nth-child(2) { color: orange; margin: 0px 8px}
+	.van_már span:nth-child(3) { color: red; margin: 0px 8px}
+	.van_már span:nth-child(4) { color: olive; margin: 0px 8px}
+	.van_már span { cursor: url(index/help2.cur) , help}
+	.van_már area { cursor: pointer}
+	.van_már { text-align:center}
+	.tipus {color: navy; margin: 0px; font-size:20px}
+	.tipus img { height:20px; width:auto; margin: 0 0 0 5px; vertical-align:top }
+	.periféria img {height:60px; width:auto; margin:0px}
+	.periféria {text-align:center;}
+	.nincs_még img { width:320px; cursor: grab;}
+	.nincs_még p { color: navy; margin: 0px}
+	.nincs_még { text-align:center;}
+	.korbevagott img {cursor: auto}
+	.korbevagott area {cursor: grab}
+	.rejtett {display:none}
+	.látható {display:block}
+	.vonalnál {color:red; font-size:30px; font-style: oblique; margin: 0 0 0 8px}
+	h4 {margin:10px 0 0 25px; background-image:url('mikroszamitogep/beszed_buborek.png') ;background-repeat:no-repeat; background-size: 100% 100%;
+		padding: 4px 7px 46px 7px; font-family: "Courier New", Courier, monospace; font-style: normal; font-size:14px; color:#333; 
+		position:absolute; z-index:1; display:none; width:270px; }
+	.nincs_még > div { width:320px; margin:8px 5px 0px 6px; position: static }
+	.nincs_még div:hover h4 { display:block}
+	h3 {color: red; font-size:20px; margin: 0 0 0 8px; font-family:'Arial'}
+
+</style>
+</head>
+
+<body onscroll="if(window.scrollY > document.getElementsByTagName('hr')[0].offsetTop) document.getElementById('fel').className='látható'; else document.getElementById('fel').className='rejtett';">
+	<a class="rejtett" id="fel" onclick="görget('#top');"><img src="mikroszamitogep/fel_computer.png" style="position:fixed; bottom:200px; left:26px;" title="Ugrás lap tetejére"></a>
+	<div class="fejléc"> <p>Betekintő - Mikroszámítógép&nbsp;gyűjtemény</p> 
+						<a href="index.htm"> <img src="index/kezdolap.png" title="Ugrás a kezdőlapra"> </a>	</div>
+	<hr color="##f1b800">
+	<p class="vonalnál">Mikroszámítógép gyűjteményem:</p>
+	<div class="van_már">
+		<div>
+			<img src="mikroszamitogep/commodore64.png" usemap="#commodore64"> <map name="commodore64"> 
+			<area shape="poly" coords="64,2,2,74,3,96,267,153,317,76,314,42" alt="Commodore 64" title="Magyarországra 1985-ben jutott el." href="mikroszamitogep/commodore64.jpg" target="_top" class="fejléc"> </map>
+			<p class="tipus">Commodore 64</p>
+			<p><span title="A gyártás kezdete">1982</span><span title="A processzor sebessége">1 MHz</span><span title="RAM">64 KiB</span><span title="Képernyőfelbontás:&#10;vízszintes x függőleges / szín">320x200/16</span></p>
+			<p class="periféria"><a href="mikroszamitogep/commodore1541.jpg" target="_top"><img alt="commodore_1541-II" src="mikroszamitogep/commodore1541.png" title="Commodore 1541&#10;5,25 colos flopy meghajtó"></a></p>
+		</div>
+		<div>
+			<img src="mikroszamitogep/Commodore64c.png" usemap="#commodore64c"> <map name="commodore64c"> 
+			<area shape="poly" coords="19,2,294,2,317,146,1,147" alt="Commodore 64C" title="8 bites processzorral készült." href="mikroszamitogep/Commodore64c.jpg" target="_top" class="fejléc"> </map>
+			<p class="tipus">Commodore 64C</p>
+			<p><span title="A gyártás kezdete">1986</span><span title="A processzor sebessége">1 MHz</span><span title="RAM">64 KiB</span><span title="Képernyőfelbontás:&#10;vízszintes x függőleges / szín">320x200/16</span></p>
+			<p class="periféria"><a href="mikroszamitogep/computek_botkormány.jpg" target="_top"><img alt="botkormány" src="mikroszamitogep/computek_botkormány.png" title="Computek turbo botkormány"></a>
+				<a href="mikroszamitogep/commodore_1541-II.jpg" target="_top"><img alt="commodore_1541-II" src="mikroszamitogep/commodore_1541-II.png" title="Commodore 1541-II&#10;5,25 colos flopy meghajtó"></a>
+				<a href="mikroszamitogep/commodore_1702.jpg" target="_top"><img alt="commodore_1702" src="mikroszamitogep/commodore_1702.png" title="Commodore video monitor&#10;model 1702"></a></p>
+		</div>
+		<div>
+			<img src="mikroszamitogep/cplus4.png" usemap="#commodoreplus4"> <map name="commodoreplus4">
+			<area shape="poly" coords="69,2,297,14,317,33,306,153,4,126,2,117,51,16" alt="Commodore plus/4" title=" A név a beépített szövegszerkesztő, táblázatkezelő, &#10; adatbáziskezelő és grafikus programra utal." href="mikroszamitogep/cplus4.jpg" target="_top"> </map>
+			<p class="tipus">Commodore plus/4</p>
+			<p><span title="A gyártás kezdete">1984</span><span title="A processzor sebessége">1,76 MHz</span><span title="RAM">64 KiB</span><span title="Képernyőfelbontás:&#10;vízszintes x függőleges / szín">320x200/121</span></p>
+			<p class="periféria"><a href="mikroszamitogep/cplus4_magno.jpg" target="_top"><img alt="magnó" src="mikroszamitogep/cplus4_magno.png" title="Commodore datassette 1531&#10magnó (háttértár)"></a></p>
+		</div>
+		<div>
+			<img src="mikroszamitogep/Enterprise128.png" usemap="#enterprise128"> <map name="enterprise128">
+			<area shape="poly" coords="82,13,90,3,302,46,302,53,315,56,309,109,297,109,290,163,263,177,228,170,169,169,49,130,2,97,50,40,47,28,68,11" alt="Enterprise 128" title="Hang: 3 csatorna + 1 csatorna fehér zajgenerátor (stereo)" href="mikroszamitogep/Enterprise128.jpg" target="_top"> </map>
+			<p class="tipus">Enterprise 128</p>
+			<p><span title="A gyártás kezdete">1985</span><span title="A processzor sebessége">4 MHz</span><span title="RAM">128 KiB</span><span title="Képernyőfelbontás:&#10;vízszintes x függőleges / szín">672x512/256</span></p>
+			<p class="periféria"><a href="mikroszamitogep/ep128_Cloud7_magno.jpg" target="_top"><img alt="magnó" src="mikroszamitogep/ep128_Cloud7_magno.png" title="CLOUD 7 (Model: M-66) magnó"></a></p>
+		</div>
+		<div>
+			<img src="mikroszamitogep/sinclair_ZX_spectrum.png" usemap="#zxspectrum"> <map name="zxspectrum">
+			<area shape="poly" coords="80,0,0,128,267,219,320,62" alt="ZX Spectrum 48K" title="Gumibillentyűin a Sinclair BASIC-kulcsszavai voltak." href="mikroszamitogep/sinclair_ZX_spectrum.jpg" target="_top"> </map>
+			<p class="tipus">Sinclair ZX Spectrum 48K</p>
+			<p><span title="A gyártás kezdete">1982</span><span title="A processzor sebessége">3,5 MHz</span><span title="RAM">16/48 KiB</span><span title="Képernyőfelbontás:&#10;vízszintes x függőleges / szín">256x192/15</span></p>
+		</div>
+		<div>
+			<img src="mikroszamitogep/vtvc64.png" usemap="#videotontvc64"> <map name="videotontvc64">
+			<area shape="poly" coords="10,8,304,3,316,179,2,184" alt="Videoton TV-Computer 64k" title="Magyar gyártmányú iskolaszámítógép" href="mikroszamitogep/vtvc64.jpg" target="_top"> </map>
+			<p class="tipus">Videoton TV-Computer 64k</p>
+			<p><span title="A gyártás kezdete">1984</span><span title="A processzor sebessége">3,125 MHz</span><span title="RAM">64 KiB</span><span title="Képernyőfelbontás:&#10;vízszintes x függőleges / szín">256x240/4</span></p>
+			<p class="periféria"><a href="mikroszamitogep/vtvc_computone_magno.jpg" target="_top"><img alt="magnó" src="mikroszamitogep/vtvc_computone_magno.png" title="Computone (model: CRC-1001) magnó"></a>
+				<a href="mikroszamitogep/vtvc_flopy.jpg" target="_top"><img alt="floppy meghajtó" src="mikroszamitogep/vtvc_flopy.png" title="Videoton TV-Computer&#10;5,25 colos flopy meghajtó"></a>
+				<a href="mikroszamitogep/vtvc_botkormany.jpg" target="_top"><img alt="botkormány" src="mikroszamitogep/vtvc_botkormany.png" title="Videoton TV-Computer botkormány"></a></p>
+		</div>
+	</div>
+	<p class="vonalnál">Köszönet a nagylelkű támogatóknak!</p>
+	<hr color="#f1b800">
+	<p class="vonalnál">Ilyen mikroszámítógépeim még nincsenek:</p>
+	<div class="nincs_még">
+		<div> <img src="mikroszamitogep/sinclair_zx80.png" title="Kiadás:1980&#10Processzor: Z80&#10Órajel: 3.25 Mhz&#10RAM: 1 KiB&#10Felbontás: fekete-fehér 24x32 karakter">
+			<p>Sinclair ZX-80</p> </div>
+		<div> <img src="mikroszamitogep/zx81.png" title="Készült 1981-ben. 1 KiB memóriája van.&#10Ez olyan kicsi, hogy nem fér el benne&#10egy Harry Potter könyv fél oldala sem."><p>Sinclair ZX81</p> </div>
+		<div> <h4>Jó lenne az idősebb tesómhoz költözni!</h4>
+			<img src="mikroszamitogep/ZX_Spectrum+.png" <p>Sinclair ZX Spectrum+</p> </div>
+		<div> <img src="mikroszamitogep/ZX_Spectrum128K.png" title="Kiadás: 1985&#10Processzor: Zilog Z80&#10Órajel: 3.5 Mhz&#10RAM: 128 KiB&#10Felbontás: 256x192/15 szín"><p>Sinclair ZX Spectrum 128 K</p> </div>
+		<div> <img src="mikroszamitogep/ZX_Spectrum+2.png" title="Kiadás: 1986&#10Processzor: Zilog Z80&#10Órajel: 3.5 Mhz&#10RAM: 128 KiB&#10Felbontás: 256x192/15 szín"><p>Sinclair ZX Spectrum +2</p> </div>
+		<div> <img src="mikroszamitogep/ZX_Spectrum+3.png" title="Kiadás: 1987&#10Processzor: Zilog Z80&#10Órajel: 3.5 Mhz&#10RAM: 128 KiB&#10Felbontás: 256x192/15 szín"><p>Sinclair ZX Spectrum +3</p> </div>
+		<div> <img src="mikroszamitogep/primo.gif" title="Kiadás: 1984 (magyar)&#10Processzor: U880 (8 bites)&#10Órajel: 2,5 Mhz&#10RAM: 16/32/48 KiB&#10Felbontás: 256x192 fekete-fehér"><p>Primo</p> </div>
+		<div> <img src="mikroszamitogep/commodore16.png" title="Ha neked csak lim-lom,&#10én szívesen elfogadom."><p>Commodore 16</p> </div>
+		<div> <img src="mikroszamitogep/commodore_vic20.png" title="... nekem a kérés nagy szégyen,&#10adjon úgy is, ha nem kérem."><p>Commodore VIC 20</p> </div>
+		<div> <img src="mikroszamitogep/ht1080z.png" title="Fogtündérke,&#10nem pénzt kérek,&#10hanem ilyet!"><p>HT-1080Z</p> </div>
+		<div> <img src="mikroszamitogep/ATARI800XL.png" title="Kár lenne kidobnod,&#10inkább nekem kéne adnod!"><p>Atari 800XL</p> </div>
+		<div class="korbevagott"> <img src="mikroszamitogep/Commodore-128.png" usemap="#commodore128"> <map name="commodore128">
+			<area shape="poly" coords="77,6,314,29,269,140,4,106" alt="Commodore 128" title="Ilyen számítógépem még nincs."></map>
+			<p>Commodore 128</p> </div>
+		<div> <img src="mikroszamitogep/Commodore_Amiga_1200.png" title="Elárvult mikroszámítógépeknek&#10kényelmes otthont biztosítok.&#10Jelige: kiállítás"><p>Commodore Amiga 1200</p> </div>
+		<div class="korbevagott"> <img src="mikroszamitogep/abc80.png" usemap="#diab_abc80"> <map name="diab_abc80">
+			<area shape="poly" coords="43,10,278,9,315,189,5,189" alt="ABC 80" title="Kedves Jézuska!&#10Kérlek, hozz nekem egy ilyen computert!"></map>
+			<p>ABC 80</p> </div>
+		<div> <img src="mikroszamitogep/amiga500.png" title="Télapó, gyere már!&#10Nyíljon már ki a zsák:&#10Jojstik és computer."><p>Amiga 500</p> </div>
+		<div> <img src="mikroszamitogep/Amiga_500_Plus.png" title="Ha utánam dobnád,&#10én elkapnám."><p>Amiga 500 Plus</p> </div>
+		<div> <img src="mikroszamitogep/amiga600.png" title="Adjatok, adjatok, adjatok!"><p>Amiga 600</p> </div>
+		<div> <img src="mikroszamitogep/EACA_EG2000_Colour_Genie.png" title="Nem utasítanám vissza."><p>EACA EG2000 Colour Genie</p> </div>
+		<div> <img src="mikroszamitogep/Commodore_116.png" title="Ilyen számítógépet szívesen elfogadnék."><p>Commodore 116</p> </div>
+		<div> <img src="mikroszamitogep/commodore-364.png" title="Gyűjteményem koronája lenne."><p>Commodore 364</p> </div>
+		<div> <img src="mikroszamitogep/commodore_PET.png" title="Ilyenről álmodni sem merek."><p>Commodore PET</p> </div>
+		<div> <img src="mikroszamitogep/Commodore_MAX.png" title="Ez álmaim netovábbja."><p>Commodore MAX</p> </div>
+		<div> <img src="mikroszamitogep/mc-10-rsc10.png" title="Porfogónak ne tartsd meg!"><p>Micro color 10</p> </div>
+		<div> <img src="mikroszamitogep/ti99.png" title="Adománynak elfogadnám."><p>Texas Instruments TI-99/4A</p> </div>
+		<div> <img src="mikroszamitogep/homelab-3.png" title="Engem akar gazdinak!&#10Jól bánnék vele."><p>Homelab-3</p> </div>
+		<div> <img src="mikroszamitogep/homelab-4.png" title="Egy poros padlásnál jobb helyet érdemel."><p>Homelab-4</p> </div>
+		<div> <img src="mikroszamitogep/trs-80.png" title="Ideális születésnapi ajándék."><p>TRS-80</p> </div>
+		<div> <h4>Olyan rossz így egyedül a fészerben!</h4>
+			<img src="mikroszamitogep/Dragon_32.png"><p>Dragon 32</p> </div>
+		<div> <img src="mikroszamitogep/Aircomp16.png" title="Nincs szükségem rá,&#10de kell nekem!"><p>Aircomp 16</p> </div>
+		<div> <img src="mikroszamitogep/Enterprise64.png" title="Jól érezné magát nálam,&#10a nagytestvére (Enterprise 128) mellet.&#10"><p>Enterprisw 64</p> </div>
+		<div> <img src="mikroszamitogep/sinclair-QL.png" title="Vágyom e gép után!"><p>Sinclair QL</p> </div>
+		<div> <h4>Új életet szeretnék kezdeni:<br>ebben a gyűjteményben!</h4>
+			<img src="mikroszamitogep/Mattel_Aquarius.png"><p>Mattel Aquarius</p> </div>
+		<div> <h4>...egyszer én is haza találok.</h4>
+			<img src="mikroszamitogep/exidy_sorcerer.png"><p>Exidy Sorcerer</p> </div>
+		<div> <h4>Korombeliek társaságára vágyom!</h4>
+			<img src="mikroszamitogep/sanyo_phc_25.png"><p>SANYO PHC 25</p> </div>
+		<div> <h4>Találtál jobbat nálam?<br>Kolostorba (múzeun) vonulnék!</h4>
+			<img src="mikroszamitogep/Magnavox_Odyssey_2.png"><p>Magnavox Odyssey 2</p> </div>
+		<div> <h4>Megöregedtem.<br>Öregek otthonába költöznék!</h4>
+			<img src="mikroszamitogep/vtvc64+.png"><p>Videoton TV-Computer 64k+</p> </div>
+		<div class="korbevagott"> <img src="mikroszamitogep/vtvc32.png" usemap="#videotontvc32"> <map name="videotontvc32">
+			<area shape="poly" coords="29,2,291,4,316,165,3,165" alt="Videoton TV-Computer 32k" title="Nyugdíjas klubomba (gyűjteményem) hajlott korú&#10retro számítógápek jelentkezését várom."></map>
+			<p>Videoton TV-Computer 32k</p> </div>
+		<div> <img src="mikroszamitogep/triton_kompi.png" title="Elaggott mikroszámítógépek&#10és perifériáik eltartását vállalom."><p>Triton kompi</p> </div>
+		<div> <img src="mikroszamitogep/atari-520st.png" title="Ha jó helyen szeretnéd tuddni régi,&#10kedves számítógéped, akkor írjál nekem!"><p>Atari 520ST</p> </div>
+		<div> <img src="mikroszamitogep/commodore_sx-64.png" title="Korban hozzám illő retro számítógépek társaságát keresem.&#10Jelige: gyűjtemény"><p>Commodore SX-64</p> </div>
+	</div>
+	<hr color="#f1b800">
+	<footer>
+		<h3>Támogatók:</h3>
+		<ul>
+			<li>Tar Sándor (Nyírszőlős)</li>
+			<li>Kovács Zoltán (Vásárosnamény)</li>
+			<li>Endreffy Attila (Budapest)</li>
+			<li>Kató Lajos (Ibrányi Árpád Fejedelem Általános Iskola és Alapfokú Művészeti Iskola)</li>
+			<li>Várkonyi István Általános Iskola (Cegléd)</li>
+			<li>Dánszentmiklósi Ady Endre Általános Iskola és Alapfokú Művészeti Iskola</li>
+			<li>Farkas Ferenc (Ibrányi Móricz Zsigmond Gimnázium és Kollégium)</li>
+			<li>Tóth Zoltán (Pilis)</li>
+		</ul>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html id="top">
+
+<head>
+<meta charset="utf-8"/>
+<meta name="keywords" content="Tar Ottó, numizmatika, érmegyűjtemény, font, font gyűjtemény">
+<title>Nagy-Britannia</title>
+<script> <!--A könyvjelzőhőz görget-->
+const görget = function (selector) {
+	let bookmark = document.querySelector(selector).offsetTop;
+	window.scrollTo(0, bookmark);}
+</script>
+<link rel="icon"  type="image/gif" href="nagy-britannia/forgo_font_erme.gif"/><!--A lapfül címe előtt megjelenö ikon (favicon) beállítása-->
+<style>
+a {
+	cursor: pointer;
+}
+body {	min-width:900px;margin: 0;}
+body > div {display: flex;}
+body > div > div {	display: flex; flex-wrap: wrap;}
+body > div > div img {	margin: 20px 8px 0px;}
+body > div > div > div p {	margin: 0;	text-align: center;}
+body > div > div > div img:nth-child(1) { margin-left:16px; margin-right: 0;}
+body > div > div > div img:nth-child(2) { margin-left: 0; margin-right:16px;}
+body > div > div > div p:nth-child(3) {	font-size: 17px; color: blue; }
+
+body > nav > div img { height: 80px; display: block;}
+body > nav > div * {border-radius: 50%;}
+body > nav { display: flex; justify-content: space-between; align-items: center; background: #0066FF}
+body > nav > div {	display: flex;	align-items: center;}
+body > nav h1 { font-size: 50px; color: yellow; margin: 0px 8px}
+body > nav div:nth-child(2) {margin: 0px }
+body > nav div:nth-child(3) > a {margin:0px 8px}
+	.rejtett {display:none}
+	.látható {display:block}
+
+nav a {text-decoration:none; margin: 2px 0;}
+</style>
+</head>
+
+<body onscroll="if(window.scrollY > 700) document.getElementById('fel').className='látható'; else document.getElementById('fel').className='rejtett';">
+<a class="rejtett" id="fel" onclick="görget('#top');"> <img src="euro/fel.png" style="position:fixed; bottom:200px; left:56px;" title="Ugrás lap tetejére"></a>
+<nav><!--Menü-->
+	<h1>Egyesült Királyság</h1>
+	<div>
+		<a onclick="görget('#font-2');"> <img src="nagy-britannia/font2.png" title="2 font&#10Ugrás az érmékhez"> </a>
+		<a onclick="görget('#font-1');"> <img src="nagy-britannia/font1.png" title="1 font&#10Ugrás az érmékhez"> </a>
+		<a onclick="görget('#p50');"><img src="nagy-britannia/50p.png" title="50 pence&#10Ugrás az érmékhez"> </a>
+		<a onclick="görget('#p20');"> <img src="nagy-britannia/20p.png" title="20 pence&#10Ugrás az érmékhez"> </a>
+		<a onclick="görget('#p10');"> <img src="nagy-britannia/10p.png" title="10 pence&#10Ugrás az érmékhez"> </a>
+		<a onclick="görget('#p5');"> <img src="nagy-britannia/5p.png" title="5 pence&#10Ugrás az érmékhez"> </a>
+		<a onclick="görget('#p2');"> <img src="nagy-britannia/2p.png" title="2 pence&#10Ugrás az érmékhez"> </a>
+		<a onclick="görget('#p1');"> <img src="nagy-britannia/1p.png" title="1 penny&#10Ugrás az érmékhez"> </a>
+		<a href="index.htm"> <img src="index/kezdolap.png" title="Ugrás a kezdőlapra"> </a>	 </div>
+</nav>
+<div><!--2 font-->
+	<div><img src="nagy-britannia/font2.png" title="2 font" height="160" id="font-2"> </div>
+	<div>
+		<div><img src="nagy-britannia/font2.png" title="Nincs a gyűjteményben"><img src="nagy-britannia/font2.png" title="Nincs a gyűjteményben"> <p>1997</p> <p>&#8709; 28,35 mm</p> </div>
+	</div>
+</div>
+<div><!--1 font-->
+	<div><img src="nagy-britannia/font1.png" title="1 font" height="160" id="font-1"> </div>
+	<div>
+		<div><img alt="korona" src="nagy-britannia/1£(2016-).jpg" title="Tudor rózsa (Anglia), póréhagyma (Wales), bogáncs (Skócia) &#10; és lóhere (Észak-Írország) egy korona belsejében"><img alt="II. Erzsébet" src="nagy-britannia/1£-back(2016-).jpg" title="II. Erzsébet"><p>2016-</p> <p>&#8709; 23,03 mm</p></div>
+	</div>
+</div>
+<div><!--50 pence-->
+	<div><img src="nagy-britannia/50p.png" title="50 pence" height="160" id="p50"> </div>
+	<div>
+		<div>
+			<div><img src="nagy-britannia/50p(1997).jpg" title="Britannia: A kelta mitológia istennője és Nagy-Britannia női megszemélyesítése"><img src="nagy-britannia/50p-back(1997).jpg"> <p>1997</p> <p>&#8709; 27,3 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/50p(1998-2008).jpg" title="Britannia"><img src="nagy-britannia/50p-back(1998-2008).jpg"> <p>1998-2008</p> <p>&#8709; 27,3 mm</p></div>
+		</div>
+	</div>
+</div>
+<div><!--20 pence-->
+	<div><img src="nagy-britannia/20p.png" title="20 pence" height="160" id="p20"> </div>
+	<div>
+		<div>
+			<div><img src="nagy-britannia/20p(1982-84).jpg"><img src="nagy-britannia/20p-back(1982-84).jpg"> <p>1982-1984</p> <p>&#8709; 21,4 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/20p(1985-97).jpg"><img src="nagy-britannia/20p-back(1985-97).jpg"> <p>1985-1997</p> <p>&#8709; 21,4 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/20p(1998-2008).jpg"><img src="nagy-britannia/20p-back(1998-2008).jpg"> <p>1998-2008</p> <p>&#8709; 21,4 mm</p> </div>
+		</div>
+	</div>
+</div>
+<div><!--10 pence-->
+	<div><img src="nagy-britannia/10p.png" title="10 pence" height="160" id="p10"> </div>
+	<div>
+		<div>
+			<div><img src="nagy-britannia/10p(1992-97).jpg"><img src="nagy-britannia/10p-back(1992-97).jpg"> <p>1992-1997</p> <p>&#8709; 24,5 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/10p(2000-08).jpg"><img src="nagy-britannia/10p-back(2000-08).jpg"><p>1998-2008</p> <p>&#8709; 24,5 mm</p> </div>
+		</div>
+	</div>
+</div>
+<div><!--5 pence-->
+	<div><img src="nagy-britannia/5p.png" title="5 pence" height="160" id="p5">	</div>
+	<div>
+		<div>
+			<div><img src="nagy-britannia/5p(1990-97).jpg"><img src="nagy-britannia/5p-back(1990-97).jpg"> <p>1990-1997</p> <p>&#8709; 18 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/5p(1998-2008).jpg"><img src="nagy-britannia/5p-back(1998-2008).jpg"><p>1998-2008</p> <p>&#8709; 18 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/5p(2011-15).jpg" title="A királyi címerpajzs részlete"><img src="nagy-britannia/5p-back(2011-15).jpg"> <p>2011-2015</p> <p>&#8709; 18 mm</p> </div>
+		</div>
+	</div>
+</div>
+<div><!--2 pence-->
+	<div><img src="nagy-britannia/2p.png" title="2 pence" height="160" id="p2"> </div>
+	<div>
+		<div>
+			<div><img src="nagy-britannia/2p(1971-81).jpg"><img src="nagy-britannia/2p-back(1971-81).jpg"> <p>1971-1981</p> <p>&#8709; 25,9 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/2p(1985-92).jpg"><img src="nagy-britannia/2p-back(1985-92).jpg"> <p>1985-1992</p> <p>&#8709; 25,9 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/2p(1992-97).jpg"><img src="nagy-britannia/2p-back(1992-97).jpg"> <p>1992-1997</p> <p>&#8709; 25,9 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/2p(2008-15).jpg" title="A királyi címerpajzs részlete"><img src="nagy-britannia/2p-back(2008-15).jpg"> <p>2008-2015</p> <p>&#8709; 25,9 mm</p> </div>
+		</div>
+	</div>
+</div>
+<div><!--1 penny-->
+	<div><img src="nagy-britannia/1p.png" title="1 penny" height="160" id="p1">	</div>
+	<div>
+		<div>
+			<div><img src="nagy-britannia/1p(1961-70).jpg" title="Britannia"><img src="nagy-britannia/1p-back(1961-70).jpg"> <p>1961-1970</p> <p>&#8709; 30,7 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/1p(1971-81).jpg"><img src="nagy-britannia/1p-back(1971-81).jpg"> <p>1971-1981</p> <p>&#8709; 20,32 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/1p(1982-84).jpg"><img src="nagy-britannia/1p-back(1982-84).jpg"> <p>1982-1984</p> <p>&#8709; 20,32 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/1p(1992-97).jpg"><img src="nagy-britannia/1p-back(1992-97).jpg"><p>1992-1997</p> <p>&#8709; 20,32 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/1p(1998-2008).jpg"><img src="nagy-britannia/1p-back(1998-2008).jpg"> <p>1998-2008</p> <p>&#8709; 20,32 mm</p> </div>
+		</div>
+		<div>
+			<div><img src="nagy-britannia/1p(2008-2015).jpg" title="A királyi címerpajzs részlete"><img src="nagy-britannia/1p-back(2008-2015).jpg"><p>2008-2015</p> <p>&#8709; 20,32 mm</p> </div>
+		</div>
+	</div>
+</div>
+<div><!--1 pence-->
+	<div><img src="nagy-britannia/zászlo.png" title="Egyéb angol érmék" height="160" id="cent-1">	</div>
+	<div>
+		<div>
+			<div><img src="nagy-britannia/2Shillings(1954-70).jpg"><img src="nagy-britannia/2Shillings-back(1954-70).jpg"> <p>1954-1970</p> <p>2 Shillings   &#8709; 28,5 mm</p> </div>
+		</div>
+	</div>
+</div>
+<p></p>
+</body>
+</html>

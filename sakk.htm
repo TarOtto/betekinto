@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>sakk</title>
+	<style>
+		header {display:flex; justify-content:space-between; margin-bottom:6px; padding:5px 10px; background-color:#FFFFFF}
+		body {background-color:black}
+		body > div {display:flex; justify-content:center; flex-wrap:wrap}
+		img { margin-top:2px; padding:0; border:0; max-height:200px; cursor:zoom-in}
+	</style>
+	<style>
+		/* The Modal (background) */
+		.modal {
+			box-sizing: border-box;
+		    display: none; /* Hidden by default */
+		    position: fixed;
+		    z-index: 1;
+		    padding: 50px; /* Location of the box */
+		    left: 0; top: 0;
+		    width: 100vw; height: 100vh;
+	    	background-color: rgba(0,0,0,0.9) !important;
+			justify-content: center; align-items: center; cursor:zoom-out
+		}
+
+		/* Modal Content (image) */
+		.modal-content {max-height: 100%; max-width:100%; cursor:zoom-out}
+
+		.close {
+		    position: absolute;
+		    top: 15px;
+		    right: 35px;
+		    color: white;
+		    font-size: 40px;
+		    font-weight: bold;
+		    transition: 0.3s;
+		}
+
+		.close:hover,
+		.close:focus {color: #bbb; text-decoration: none; cursor: pointer}
+	</style>
+	
+</head>
+
+<body>
+	<header>
+		<h1 style=" margin:0 0 0 20px; font-size:60px; font-style:italic; font-family:'Bernard MT Condensed'; color:rgb(0,0,0); font-weight:bold">Sakk - Chess</h1>
+		<a href="index.htm"> <img src="index/kezdolap.png" title="Ugrás a kezdőlapra"/></a>	
+	</header>
+	<div>
+		<img alt="tábla" src="sakk/sved_games.png" />
+		<img alt="42. Sakkolimpia" src="sakk/azerbajdzsán.jpg" title="42. Sakkolimpia&#10Baku 2016 (blokk)" />
+		<img alt="miniatűr" src="sakk/magyar_alfonz.png" title="Miniatűr Bölcs Alfonz kéziratából&#10XIII. sz." />
+		<img alt="fametszet" src="sakk/magyar_caxton.png" title="Fametszet Caxton sakk-könyvéből&#10XV. sz." />
+		<img alt="illusztráció" src="sakk/magyar_olasz.png" title="Illusztráció egy olasz sakk-könyvből&#10XV. sz." />
+		<img alt="rézmetszet" src="sakk/magyar_Selenus.png" title="Rézmetszet Selenus művében&#10XVII. sz." />
+		<img alt="huszárok" src="sakk/malawi_Knight.png" title="huszárok" />
+		<img alt="futók" src="sakk/malawi_Bishop.png" title="futók" />
+		<img alt="bástyák" src="sakk/malawi_Rook.png" title="bástyák" />
+		<img alt="vezérek" src="sakk/malawi_Queen.png" title="vezérek" />
+		<img alt="futó és gyalog" src="sakk/mali_Bishop-and-Pawn.png" title="futó és gyalog" />
+		<img alt="bástya és huszár" src="sakk/mali_Rook-and-Knight.png" title="bástya és huszár" />
+		<img alt="király és vezér" src="sakk/mali_King-and-Queen.png" title="király és vezér" />
+		<img alt="huszár" src="sakk/nszk_Knight.png" title="huszár" />
+		<img alt="bástya" src="sakk/nszk_Rook.png" title="bástya" />
+		<img alt="vezér" src="sakk/nszk_Queen.png" title="vezér" />
+		<img alt="király" src="sakk/nszk_King.png" title="király" />
+		<img alt="király" src="sakk/feröer_1.png" title="király" /><img alt="királynő" src="sakk/feröer_2.png" title="királynő = vezér" />
+		<img alt="skót figurák" src="sakk/vietnam_futo_kiraly.png" title="Fehér futó és fekete király,&#10amely egy XII. századi skót játékhoz tartozott." />
+		<img alt="bástya" src="sakk/vietnam_bastya.png" title="Elefántcsontból készült bástya" />
+		<img alt="huszár" src="sakk/vietnam_f-lo.png" title="A XIII. századi skandináv játékhoz tartozó fekete ló." />
+		<img alt="bástya" src="sakk/vietnam_f-bastya.png" title="A XVIII. századi orosz vitorlás&#10a fehér bástyát képviseli." />
+		<img alt="futó és bástya" src="sakk/vietnam_futo_bastya.png" title="Az elefántcsontból készült fehér futó és bástya&#10;a XIX. századi Kantonból származik." />
+		<img alt="gyalog és bástya" src="sakk/vietnam_gyalog_bastya.png" title="Vietnámi stílusú gyalog és bástya" />
+		<img alt="király" src="sakk/vietnam_kiraly.png" title="Ázsiában a király leggyakoribb formája volt." />
+		<img alt="Philidor" src="sakk/csad_Philidor.png" title="François-André Danican Philidor (1726-1795)&#10francia sakkozó és zeneszerző volt.&#10Könyve: Analyse du jeu des Échecs" />
+		<img alt="Paul Morphy" src="sakk/csad_Paul-Morphy.png" title="Paul Charles Morphy (1837-1884)&#10amerikai sakkozó volt.&#10;12 évesen 3-szor győzte le&#10Löwenthal Jakab magyar sakkmestert." />
+		<img alt="Howard Staunton" src="sakk/csad_Howard_Staunton.png" title="Howard Staunton (1810-1874)&#10angol sakkmester volt.&#10Nevet szerzett sakkíróként és&#10Shakespeare-szakértőként is." />
+		<img alt="Jean-Paul Capablanka" src="sakk/csad_jean-paul_capablanka.png" title="José Raúl Capablanca y Graupera (1888-1942)&#10kubai sakkozó.&#10A sakk 3. világbajnoka (1921-1927)" />
+		<img alt="Boris Spassky" src="sakk/csad_Boris-Spassky.png" title="Borisz Vasziljevics Szpasszkij (1937-)&#10szovjet-francia sakkozó.&#10;A sakk 10. világbajnoka (1969-1972)" />
+		<img alt="sakkozók" src="sakk/sakkozok.jpg" usemap="#4sakkozo" title="Bobby Fischer&#10Vladimír Kramnik&#10Magnus Carlsen&#10Emanuel Lasker"/><map name="4sakkozo">
+			<area shape="rect" coords="19,60,88,144" alt="Fischer" title="Bobby Fischer (1943-2008)&#10amerikai sakknagymester.&#10Sakkvilágbajnok 1972-1975&#10A sakk960 sakkváltozat kitalálója."/>
+			<area shape="rect" coords="96,60,166,144" alt="Kramnik" title="Vladimír Kramnik (1975-)&#10orosz sakknagymester.&#10Sakkvilágbajnok 2000-2007 (PCA)"/>
+			<area shape="rect" coords="174,60,243,144" alt="Carlsen" title="Magnus Carlsen (1990-)&#10norvég sakknagymester.&#10Sakkvilágbajnok 2013– (PCA)&#10;rapid: 2014, 2015&#10;villám: 2009, 2014"/>
+			<area shape="rect" coords="251,60,320,144" alt="Lasker" title="Emanuel Lasker (1868-1941)&#10sakknagymester.&#10Sakkvilágbajnok 1894-1921"/>
+			</map>
+		<img alt="Karpov Kasparov" src="sakk/salamon_karpov-kasparov.png" usemap="#ka" title="Karpov és Kasparov" /> <map name="ka">
+			<area shape="poly" coords="119,90,83,10,48,10,19,98,41,155,107,155" alt="Karpov" title="Anatolij Karpov&#10világbajnok&#10;1975-85&#10;1993-99 (FIDE)" />
+			<area shape="poly" coords="245,85,245,192,166,162,161,44,209,37" alt="Kasparov" title="Garri Kaszparov&#10világbajnok&#10;1985-93 (FIDE)&#10;1993-2000 (PCA)" /></map>
+		<img alt="Louis-Charles Mahé" src="sakk/salamon_louis-charles_mahé_de_labourdonnais.png" title="Louis-Charles Mahé de La Bourdonnais (1795-1840)&#10francia sakkozó volt." />
+		<img alt="Luis Ramírez de Lucena" src="sakk/salamon_luis_ramírez_de_lucena.png" title="Luis Ramírez de Lucena (1465-1530)&#10spanyol sakknagymester.&#10Az első nyomtatásban megjelenő sakkszakkönyv írója." />
+		<img alt="Steinitz Lasker Capablanka" src="sakk/salamon_steinitz-lasker-capablanka.png" />
+		<img alt="Viswanathan Anand" src="sakk/salamon_viswanathan_anand.png" title="Viswanathan Anand (1969–)&#10indiai sakknagymester.&#10;2000–2002 és 2007–2013 között a sakkozás világbajnoka." />
+		<img alt="Kosztyenyuk" src="sakk/burundi_Alexandra-Kosteniuk.png" title="Alekszandra Konsztantyinovna Kosztyenyuk (1984–)&#10orosz-svájci sakkozó.&#10Női sakkvilágbajnok (2008-2010)" />
+		<img alt="Petroszjan" src="sakk/comores_Tigran-Petrosian.png" title="Tyigran Vartanovics Petroszjan (1929-1984)&#10szovjet-örmény sakkozó.&#10A sakk világbajnoka (1963-1969)" />
+		<img alt="karpov" src="sakk/karpov.jpg" title="Anatolij Jevgenyjevics Karpov (1951-)&#10orosz nemzetközi sakknagymester&#10Róla nevezték el a 90414 Karpov nevű kisbolygót." />
+		<img alt="Muzicsuk" src="sakk/ukrajna_Anna-Marija.png" usemap="#muzicsuk" title="Anna és Maríja Olehivna Muzicsuk" /> <map name="muzicsuk">
+			<area shape="poly" coords="182,136,184,57,217,33,260,72,283,162,180,177" alt="Anna" title="Anna Olehivna Muzicsuk (1990-)&#10nöi sakknagymester.&#10Női rapidsakk világbajnok 2016&#10Női villámsakk világbajnok 2016" />
+			<area shape="poly" coords="261,72,284,162,347,162,367,137,313,13,261,47" alt="Maríja" title="Marija Olehivna Muzicsuk (1992-)&#10nöi sakknagymester.&#10Női sakkvilágbajnok (2015-2016)" /></map>
+		<img alt="fide" src="sakk/Chess-World-Cup.jpg" title="Sakk Világkupa&#10;2015 Baku (Azerbaijan)" />
+	</div>
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01"/>
+	</div>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var imgs = document.getElementsByTagName('img');
+		var modalImg = document.getElementById("img01");
+		for (let i = 0; i < imgs.length; i++) {
+			let img = imgs[i];
+			img.onclick = function(){
+					modal.style.display = "flex";
+					modalImg.src = this.src;
+					/* captionText.innerHTML = this.alt; */
+			}
+		}
+		var maps = document.getElementsByTagName('map');
+		for (let i = 0; i < maps.length; i++) {
+			let map = maps[i];
+			let name = map.name;
+			for (let j = 0; j < imgs.length; j++) {
+				let img = imgs[j];
+				if (img.useMap === '#' + name) {
+					map.onclick = function(){
+						modal.style.display = "flex";
+						modalImg.src = img.src;
+					}
+				}
+			}
+		}
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		modal.onclick = span.onclick = function() { modal.style.display = "none"}
+	</script>
+</body>
+
+</html>
