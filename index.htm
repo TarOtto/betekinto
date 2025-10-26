@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"; name="keywords">
+	<meta name="keywords" content="szorzótábla, benfoglaló tábla, maradékos osztás, Tar Ottó, retro számítógép, retro computer, mikroszámítógép, mikrocomputer, numizmatika, érmegyűjtemény">
+	<meta name="author" content="Tar Ottó">
+	<link rel="icon" type="image/gif" href="index/favicon.gif"/><!--A lapfül címe előtt megjelenö ikon (favicon) beállítása-->
+
+	<style>
+		body {background-color: rgb(221,216,194)}
+		.fejléc { display: flex; margin-bottom:8px}
+		.fejléc p {	color:rgb(160,148,90); margin-left:50px; font-size:60px; text-align:center}
+		.linkek {font-size:20px; margin: 20px;}
+		.linkek a {text-decoration:none; color:red;}
+		body > footer > img {border-color:#339966}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+nav a, button {
+	font-size: 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+	padding: 1em;
+	border: none;
+	outline: none;
+	margin: 0;
+}
+nav > ul {
+	display: flex;
+	font-family: sans-serif;
+}
+nav > ul > li {	margin-right: 1px;}
+nav > ul > li > *:first-child {
+    color: white;
+    background-color: #4CAF50;
+}
+nav > ul > li:hover > *:first-child {    background-color: #3e8e41;}
+nav > ul > li:hover > .dropdown {display: block;}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown a {
+    padding: 12px 16px;
+    color: black;
+    background-color: white;
+}
+.dropdown a:hover {	background-color: #f1f1f1}
+
+	</style>
+</head>
+<body>
+	<div class="fejléc"> <img src="index/Ottó.png"> <p>Betekintő - Kezdőlap</p> </div>
+	<nav><ul>
+		<li>
+			<button>Numizmatika</button>
+			<ul class="dropdown">
+				<li><a href="euro.htm" target="_parent">Euro</a></li>
+				<li><a href="nagy-britannia.htm" target="_parent">Nagy-Britannia</a></li>
+				<li><a href="romania.htm" target="_parent">Románia</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="szamitogep.htm" target="_parent">Mikroszámítógép</a>
+		</li>
+		<li>
+			<button>Bélyeggyűjtés</button>
+			<ul class="dropdown">
+				<li><a href="halak.htm" target="_parent">Édesvízi halak</a></li>
+				<li><a href="mese.htm" target="_parent">Mesélő bélyeg</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="letoltes.htm" target="_parent">Letöltések</a>
+		</li>
+	</ul></nav>
+	<div class="linkek">
+		<a href="http://colnect.com/hu/coins/countries" target="_blank">Colnet (érmekatalógus)</a>
+		<br>
+		<a href="https://www.ecb.europa.eu/euro/coins/html/index.hu.html" target="_blank">Európai Központi Bank (érmekatalógus)</a>
+	</div>
+	<footer style="position:fixed; bottom:0; left:0; width:100vw; background-color:#339966">
+		<img alt="kapcsolat" border="10px"  src="index/kapcsolat.png"></footer>
+</body>
+</html>
