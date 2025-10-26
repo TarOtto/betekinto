@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html id="top">
+
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="Tar Ottó, numizmatika, érmegyűjtemény, euro, euro gyűjtemény">
+
+<title>Euro</title>
+	<script> <!--A könyvjelzőhőz görget-->
+		const görget = function (selector) {let bookmark = document.querySelector(selector).offsetTop; window.scrollTo(0, bookmark);}
+	</script>
+	<link rel="icon"  type="image/gif" href="euro/forgo_euro_erme.gif"/><!--A lapfül címe előtt megjelenö ikon (favicon) beállítása-->
+<style>
+a {cursor: pointer;}
+body { min-width:950px;margin: 0;}
+body > div {display: flex;}
+body > div > div {display: flex; flex-wrap: wrap;}
+body > div > div img {	margin: 20px 8px 0px;}
+body > div > div > div p {margin: 0; text-align: center;}
+body > div > div > div p:nth-child(2) {	font-size: 17px;}
+body > div > div > div p:nth-child(4) {	color: blue; }
+
+body > nav > div img { height: 80px; display: block;}
+body > nav > div * {border-radius: 50%;}
+body > nav { display: flex; justify-content: space-between; align-items: center; background: #0066FF}
+body > nav > div {display: flex; align-items: center;}
+body > nav h1 { font-size: 80px; color: yellow;}
+body > nav > * {	margin: 0 8px;}
+nav a {text-decoration:none; margin: 2px 1px;}
+	.rejtett {display:none}
+	.látható {display:block}
+</style>
+</head>
+
+<body onscroll="if(window.scrollY > 700) document.getElementById('fel').className='látható'; else document.getElementById('fel').className='rejtett';">
+<a class="rejtett" id="fel" href="" onclick="window.scrollTo(0,0);"><img src="euro/fel.png" style="position:fixed; bottom:200px; left:56px;" title="Ugrás lap tetejére"></a>
+<nav><!--Menü-->
+	<h1>EURO</h1>
+	<div>
+		<a onclick="görget('#euro-2');"> <img src="euro/2%20Euro.jpg" title="Ugrás az érmékhez"> </a>
+		<a onclick="görget('#euro-1');"> <img src="euro/1%20Euro.jpg" title="Ugrás az érmékhez"> </a>
+		<a onclick="görget('#cent-50');"> <img src="euro/50%20EuroCent.jpg" title="Ugrás az érmékhez"> </a>
+		<a onclick="görget('#cent-20');"> <img src="euro/20%20EuroCent.jpg" title="Ugrás az érmékhez"> </a>
+		<a onclick="görget('#cent-10');"> <img src="euro/10%20EuroCent.jpg" title="Ugrás az érmékhez"> </a>
+		<a onclick="görget('#cent-5');"> <img src="euro/5%20EuroCent.jpg" title="Ugrás az érmékhez"> </a>
+		<a onclick="görget('#cent-2');"> <img src="euro/2%20EuroCent.jpg" title="Ugrás az érmékhez"> </a>
+		<a onclick="görget('#cent-1');"> <img src="euro/1%20EuroCent.jpg" title="Ugrás az érmékhez"> </a>
+		<a href="index.htm"> <img src="index/kezdolap.png" title="Ugrás a kezdőlapra"> </a>	 </div>
+</nav>
+<div><!--2 Euro-->
+	<div><img src="euro/2%20Euro.jpg" title="&#8709; 25,75 mm" height="160" id="euro-2"> </div>
+	<div>
+		<div><img src="euro/2E%20Ausztria%20Bertha.gif" title="Bertha von Shuttner emberi jogi és békeaktivista"> 
+			<p>Ausztria (-2006)</p> <p>Bertha von Shuttner</p> <p>forgalmi érme</p> </div>
+		<div><img src="euro/2E%20Belgium%20Albert.jpg"> <p>Belgium (-2006)</p> <p>II. Albert király</p> <p>forgalmi érme</p> </div>
+		<div><img src="euro/2E%20Finn%20Hamvas.jpg"> <p>Finn (-2006)</p> <p>Hamvas szeder</p> <p>forgalmi érme</p> </div>
+		<div><img src="euro/2E%20Francia%20fa.jpg" title="felirat: LIBERTÉ EGALITÉ FRATERNITÉ">
+			<p>Francia (-2006)</p> <p>Stilizált fa</p> <p>forgalmi érme</p> </div>
+		<div><img src="euro/2E%20Görög%202004.jpg"> <p>Görög (2004)</p> <p>Diszkoszvető</p> <p>emlék érme</p> </div>
+		<div><img src="euro/2E%20Görög%20Zeusz.jpg" title="Zeusz bika képében elrabolja Európát"> 
+			<p>Görög (-2006)</p> <p>Zeusz elrabolja Európát</p> <p>forgalmi érme</p> </div>
+		<div><img src="euro/2E_Görög(2015).jpg" title="Az uniós zészló 30. évfordulója &#10Minden euroövezeti ország kibocsájtja a saját feliratával."> 
+			<p>Görög (-2006)</p> <p>Az uniós zészló 30. évf.</p> <p>enlék érme</p> </div>
+		<div><img src="euro/2E%20Holland%20Beatrix.jpg"> <p>Hollandia (-2006)</p> <p>Beatrix királynő</p> <p>forgalmi érme</p> </div>
+		<div><img src="euro/2E%20Luxemburg%202005.jpg" title="felirat: GRANDS-DUCS DE LUXEMBOURG">
+			<p>Luxemburg (2005)</p> <p>Nagyhercegek</p>  <p>emlék érme</p> </div>
+		<div><img src="euro/2E%20Luxemburg%202007.jpg" title="Háttérben a Nagyhercegi palota">
+			<p>Luxemburg (2007)</p> <p>Henri nagyherceg</p>  <p>emlék érme</p> </div>
+		<div><img src="euro/2E%20Német%202006.jpg" title="felirat: Schleswing-Klostein">
+			<p>Német (2006)</p> <p>Lübeck város kapuja</p>  <p>emlék érme</p> </div>
+		<div><img src="euro/2E%20Német%202007.jpg" title="felirat: Mecklenburg-Vorpommern">
+			<p>Német (2007)</p> <p>Schwerini kastély</p>  <p>emlék érme</p> </div>
+		<div><img src="euro/2E%20Nénet%20sas.jpg" title="A sas az egységes Németország jelképe">
+			<p>Német (-2006)</p> <p>Sas</p> <p>forgalmi érme</p> </div>
+		<div><img src="euro/2E%20Olasz%202006.jpg" title="felirat: GIOCHI INVERNALI">
+			<p>Olasz (2006)</p> <p>XX. Téli olimpiai játékok</p> <p>emlék érme</p> </div>
+		<div><img src="euro/2E%20Olasz%20Raphael.jpg" title="Dante Alighieri író arcképe">
+			<p>Olasz (-2007, 2008-)</p> <p>Fej babérkoszorúval</p> <p>forgalmi érme</p> </div>
+		<div><img src="euro/2E%20Spanyol%20Juan.gif"> <p>Spanyol (-2006)</p> <p>I. János Károly király</p> <p>forgalmi érme</p>	</div>
+	</div>
+</div>
+<div><!--1 Euro-->
+	<div><img src="euro/1%20Euro.jpg" title="&#8709; 23,25 mm" height="160" id="euro-1"> </div>
+	<div>
+		<div><img src="euro/1E%20Ausztria%20Mozart.jpg" title="Wolfgang Amadeus Mozart zeneszerző"> 
+			<p>Ausztria (-2007)</p> <p>W. A. Mozart</p> </div>
+		<div><img src="euro/1E%20Belgium%20Albert.jpg"> <p>Belgium (-2006)</p>  <p>II. Albert király</p> </div>
+		<div><img src="euro/1E%20Francia%20fa.jpg" title="felirat: LIBERTÉ EGALITÉ FRATERNITÉ">
+			<p>Francia (-2006)</p> <p>Stilizált fa</p>	</div>
+		<div><img src="euro/1E%20Görög%20bagoly.jpg" title="A bagoly a tudás és bölcsesség jelképe,  &#10;  Pallasz Athéné madara">
+			<p>Görög (-2006)</p> <p>Bagoly</p> </div>
+		<div><img src="euro/1E%20Német%20sas.jpg" title="A sas az egységes Németország jelképe">
+			<p>Német (-2006)</p> <p>Sas</p> </div>
+		<div><img src="euro/1E%20Olasz%20Leonardo.jpg"> <p>Olasz (-2007)</p> <p>Az emberi test arányai</p> </div>
+		<div><img src="euro/1E%20Spanyol%20Juan.jpg"> <p>Spanyol (-2006)</p> <p>I. János Károly király</p> </div>
+		<div><img src="euro/1E%20Szlovák%20Címer.jpg"> <p>Szlovákia (- )</p> <p>Szlovák címer</p> </div>
+	</div>
+</div>
+<div><!--50 Euro Cent-->
+	<div><img src="euro/50%20EuroCent.jpg" title="&#8709; 24,25 mm" height="160" id="cent-50"> </div>
+	<div>
+		<div><img src="euro/50C%20Ausztria.jpg" title="A Szecesszió Háza Bécsben"> <p>Ausztria (- )</p> <p>Művészeti Múzeum</p> </div>
+		<div><img src="euro/50C%20Ciprus.jpg"> <p>Ciprus (- )</p> <p>Küréniai hajóroncs</p> </div>
+		<div><img src="euro/50C%20Francia.jpg"> <p>Francia (-2006)</p> <p>Magvető nő</p> </div>
+		<div><img src="euro/50C_görög.jpg" title="(1864-1936) politikus"> <p>Görög (-2006)</p> <p>Eleftheriosz Venizelost</p> </div>
+		<div><img src="euro/50C%20holland.jpg"> <p>Hollandia (-2006)</p> <p>Beatrix királynő</p> </div>
+		<div><img src="euro/50C%20német.jpg" title="Berlin központjában épült&#10;26 méter magas, 65,5 méter széles&#10kora klasszicista építmény"> <p>Német (-2006)</p> <p>Brandenburgi kapu</p> </div>
+		<div><img src="euro/50C%20olasz.jpg" title="A római birodalom történész, filozófus császára volt">
+			<p>Olasz (-2007)</p> <p>Marcus Aurelius szobra</p> </div>
+		<div><img src="euro/50C%20spanyol.jpg" title="Miguel de Cervantes spanyol író,  &#10; a Don Quijote de la Mancha regény szerzője">
+			<p>Spanyol (-2006)</p> <p>Miguel de Cervantes</p> </div>
+		<div><img src="euro/50C%20Szlovákia.jpg"> <p>Szlovákia (- )</p> <p>Pozsonyi vár</p> </div>
+	</div>
+</div>
+<div><!--20 Euro Cent-->
+	<div><img src="euro/20%20EuroCent.jpg" title="&#8709; 22,25 mm" height="160" id="cent-20"> </div>
+	<div>
+		<div><img src="euro/20C%20Ausztria.jpg" title="A Belveder palota&#10Bécsben épült, barokk kastély"> <p>Ausztria (2008-)</p> <p>Belveder palota kapuja</p> </div>
+		<div><img src="euro/20C%20Belgium.jpg">	<p>Belgium (-2006)</p>  <p>II. Albert király</p> </div>
+		<div><img src="euro/20C%20Francia.jpg"> <p>Francia (-2006)</p> <p>Magvető nő</p> </div>
+		<div><img src="euro/20C%20Görög.jpg" title="Joannisz Kapodisztriasz  &#10; az 1821-es függetlenségi háború után  &#10; Görögország első kormányzója volt.">
+			<p>Görög (-2006)</p> <p>Kapodisztriasz</p> </div>
+		<div><img src="euro/20C%20Német.jpg"> <p>Német (-2006)</p> <p>Brandenburgi kapu</p> </div>
+		<div><img src="euro/20C%20Olasz.jpg" title="Umberto Boccioni futurista művész készítette">
+			<p>Olasz (-2007)</p> <p>Lépő ember szobra</p></div>
+		<div><img src="euro/20C%20Spanyol.jpg" title="Miguel de Cervantes spanyol író,  &#10; a Don Quijote de la Mancha regény szerzője">
+			<p>Spanyol (-2006)</p> <p>Miguel de Cervantes</p> </div>
+		<div><img src="euro/20C%20Szlovákia.jpg"> <p>Szlovákia (- )</p> <p>Pozsonyi vár</p> </div>
+		<div><img src="euro/20C%20Szlovénia.jpg"> <p>Szlovénia (- )</p> <p>Lipicai ménes</p> </div>
+	</div>
+</div>
+<div><!--10 Euro Cent-->
+	<div><img src="euro/10%20EuroCent.jpg" title="&#8709; 19,75 mm" height="160" id="cent-10"> </div>
+	<div>
+		<div><img src="euro/10C%20Francia.jpg"> <p>Francia (-2006)</p> <p>Magvető nő</p> </div>
+		<div><img src="euro/10C%20Görög.jpg" title="Rigasz Velesztinlisz Fereosz (1757-1798)  &#10; görög gondolkodó">
+			<p>Görög (-2006, 2006-)</p> <p>Rigasz Fereosz</p> </div>
+		<div><img src="euro/10C%20Német.jpg"> <p>Német (-2006)</p> <p>Brandenburgi kapu</p> </div>
+		<div><img src="euro/10C%20Olasz.jpg" title="Sandro Botticelli:  &#10Vénusz születése című festményéről">
+			<p>Olasz (-2007, 2008-)</p> <p>Vénusz istennő</p> </div>
+		<div><img src="euro/10C%20Spanyol.jpg" title="Miguel de Cervantes spanyol író,  &#10; a Don Quijote de la Mancha regény szerzője">
+			<p>Spanyol (-2006)</p> <p>Miguel de Cervantes</p> </div>
+		<div><img src="euro/10C%20Szlovákia.jpg"> <p>Szlovákia (- )</p> <p>Pozsonyi vár</p> </div>
+		<div><img src="euro/10C%20Szlovénia.jpg" title="Soha nem épült fel">
+			<p>Szlovénia (- )</p> <p>Szabadság Katedrális</p> </div>
+	</div>
+</div>
+<div><!--5 Euro Cent-->
+	<div><img src="euro/5%20EuroCent.jpg" title="&#8709; 21,25 mm" height="160" id="cent-5">	</div>
+	<div>
+		<div><img src="euro/5C%20Ausztria.jpg"> <p>Ausztria (- )</p> <p>Kankalin</p> </div>
+		<div><img src="euro/5C%20Francia.jpg" title="Franciaország allegorikus fiatal nőalakja">
+			<p>Francia (- )</p> <p>Marianne</p> </div>
+		<div><img src="euro/5C%20Görög.jpg"> <p>Görög (- )</p> <p>Óceánjáró tankhajó</p> </div>
+		<div><img src="euro/5C%20Holland.jpg"> <p>Hollandia (- )</p> <p>Beatrix királynő</p> </div>
+		<div><img src="euro/5C%20Német.jpg"> <p>Német (- )</p> <p>Kocsányos tölgy levele</p> </div>
+		<div><img src="euro/5C%20Olasz.jpg" title="Rómában épült amfiteátrum">
+			<p>Olasz (- )</p> <p>Colosseum</p> </div>
+		<div><img src="euro/5C%20Portugál.jpg"> <p>Portugália (- )</p> <p>Királyi pecsét</p> </div>
+		<div><img src="euro/5C%20Spanyol.jpg" title="Santiago de Compostela városban áll">
+			<p>Spanyol (- 2009)</p> <p>Szt. Jakab katedrális</p> </div>
+	</div>
+</div>
+<div><!--2 Euro Cent-->
+	<div><img src="euro/2%20EuroCent.jpg" title="&#8709; 18,75 mm" height="160" id="cent-2"> </div>
+	<div>
+		<div><img src="euro/2C%20Ausztria.jpg"> <p>Ausztria (- )</p> <p>Havasi gyopár</p> </div>
+		<div><img src="euro/2C%20Francia.jpg" title="Franciaország allegorikus fiatal nőalakja">
+			<p>Francia (- )</p> <p>Marianne</p> </div>
+		<div><img src="euro/2C_Görög.jpg"> <p>Görög (- )</p> <p>Vitorlás hadihajó</p> </div>
+		<div><img src="euro/2C%20Német.jpg"> <p>Német (- )</p> <p>Kocsányos tölgy levele</p> </div>
+	</div>
+</div>
+<div><!--1 Euro Cent-->
+	<div><img src="euro/1%20EuroCent.jpg" title="&#8709; 16,25 mm" height="160" id="cent-1">	</div>
+	<div>
+		<div><img src="euro/1C%20Ausztria.jpg"> <p>Ausztria (- )</p> <p>Tárnics virág</p> </div>
+		<div><img src="euro/1C%20Görög.jpg"> <p>Görög (- )</p> <p>Vitorlás gálya</p> </div>
+		<div><img src="euro/1C%20Holland.jpg"> <p>Hollandia (- )</p> <p>Beatrix királynő</p> </div>
+		<div><img src="euro/1C%20Ír.jpg"><p>Ír (- )</p> <p>Hárfa</p> </div>
+		<div><img src="euro/1C%20Német.jpg"> <p>Német (- )</p> <p>Kocsányos tölgy levele</p> </div>
+		<div><img src="euro/1C%20Olasz.jpg"> <p>Olasz (- )</p> <p>Castel del Monte vár</p> </div>
+		<div><img src="euro/1C%20Szlovákia.jpg"> <p>Szlovákia (- )</p> <p>Kriván hegy</p> </div>
+	</div>
+</div>
+<p></p>
+</body>
+</html>
